@@ -18,10 +18,43 @@
       <br>
       <p>WHAT ARE YOU CALCULATING TODAY?</p>
       <BR> <BR>
-      <DIV class="home-buttons">
+      <DIV class="home-button">
+        <button onclick="showpage('sim')">SIMPLE CALCULATOIN</button>
+        <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
+       <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
+       <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
+      
       </div>
     </div>
-    <div id="id" class="page">
+    <div id="sim" class="page">
+       <div class="calc-container">
+        <!-- Display Screen -->
+        <input type="text" id="display" readonly placeholder="0">
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operator" onclick="append(' / ')">/</button>
+            <button class="operator" onclick="append(' * ')">*</button>
+            
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button class="operator" onclick="append(' - ')">-</button>
+            
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button class="operator" onclick="append(' + ')">+</button>
+            
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="append('.')">.</button>
+            
+            <button onclick="append('0')">0</button>
+            <button id="calculate-btn" class="equals">=</button>
+              </div>
       
     </div>
     <div id="id" class="page">
