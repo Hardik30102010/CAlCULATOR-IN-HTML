@@ -20,19 +20,19 @@
       <BR> <BR>
       <DIV class="home-button">
         <button onclick="showpage('sim')">SIMPLE CALCULATOIN</button>
-        <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
-       <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
-       <button onclick="showpage('id')">SIMPLE CALCULATOIN</button>
+        <button onclick="showpage('area')">SIMPLE CALCULATOIN</button>
+       <button onclick="showpage('pi')">SIMPLE CALCULATOIN</button>
+       <button onclick="showpage('pt')">SIMPLE CALCULATOIN</button>
       
       </div>
     </div>
     <div id="sim" class="page">
        <div class="calc-container">
-        <!-- Display Screen -->
+        
         <input type="text" id="display" readonly placeholder="0">
 
-        <!-- Buttons -->
-        <div class="buttons">
+        
+        <div class="keys">
             <button class="clear" onclick="clearDisplay()">C</button>
             <button class="operator" onclick="append(' / ')">/</button>
             <button class="operator" onclick="append(' * ')">*</button>
@@ -57,7 +57,14 @@
               </div>
       
     </div>
-    <div id="id" class="page">
+    <div id="area" class="page">
+      
+    </div>
+      <div id="pi" class="page">
+      
+          </div>
+      
+    <div id="pt" class="page">
       
     </div>
     <py-script src="python.py">
